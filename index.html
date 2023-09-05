@@ -58,7 +58,36 @@
       331 E Evelyn Ave<br />
       Mountain View, CA 94041<br />
       USA <br />
-      Location: <a href="geo:48.8584,2.2945">48.8584° N, 2.2945° E</a>  <!--Passing geographical coordinates-->
+      Location: <a href="geo:48.8584,2.2945">48.8584° N, 2.2945° E</a>
+      <br /><br />
+      <!--Passing geographical coordinates-->
     </address>
+
+    <!--Below <area> and <map> tags are used-->
+    <h2>Area and Map tags</h2>
+    <map name="infographic">
+      <area
+        shape="poly"
+        coords="130,147,200,107,254,219,130,228"
+        href="https://developer.mozilla.org/docs/Web/HTML"
+        target="_blank"
+        alt="HTML"
+      />
+      <area
+        shape="poly"
+        coords="130,147,130,228,6,219,59,107"
+        href="https://developer.mozilla.org/docs/Web/CSS"
+        target="_blank"
+        alt="CSS"
+      />
+      <area
+        shape="poly"
+        coords="130,147,200,107,130,4,59,107"
+        href="https://developer.mozilla.org/docs/Web/JavaScript"
+        target="_blank"
+        alt="JavaScript"
+      />
+    </map>
+    <img usemap="#infographic" src="mdn-info.png" alt="MDN infographic" />
   </body>
 </html>

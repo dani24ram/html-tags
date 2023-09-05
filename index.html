@@ -16,13 +16,13 @@
     <p>You can reach Michael at:</p>
 
     <ul>
-      <li><a href="https://google.com" target="_blank">Website</a></li>
+      <li><a href="https://google.com" target="_blank">Website with Target _blank</a></li>
       <!--usually a new tab, but users can configure browsers to open a new window instead-->
-      <li><a href="https://google.com" target="_parent">Website</a></li>
+      <li><a href="https://google.com" target="_parent">Website with Target _parent</a></li>
       <!--the parent browsing context of the current one. If no parent, behaves as _self-->
-      <li><a href="https://google.com" target="_self">Website</a></li>
+      <li><a href="https://google.com" target="_self">Website with Target _self (default)</a></li>
       <!--the current browsing context. (Default)-->
-      <li><a href="https://google.com" target="_top">Website</a></li>
+      <li><a href="https://google.com" target="_top">Website with Target _top</a></li>
       <!-- the topmost browsing context (the "highest" context that's an ancestor of the current one). If no ancestors, behaves as _self-->
       <li><a href="mailto:m.bluth@example.com">Email</a></li>
       <li><a href="tel:+123456789">Phone</a></li>
@@ -66,6 +66,7 @@
     <!--Below <area> and <map> tags are used-->
     <h2>Area and Map tags</h2>
     <map name="infographic">
+      <p>If you click on HTML, it will redirect you to MDN HTML docs.</p>
       <area
         shape="poly"
         coords="130,147,200,107,254,219,130,228"
@@ -73,6 +74,7 @@
         target="_blank"
         alt="HTML"
       />
+      <p>If you click on CSS, it will redirect you to MDN CSS docs.</p>
       <area
         shape="poly"
         coords="130,147,130,228,6,219,59,107"
@@ -80,6 +82,7 @@
         target="_blank"
         alt="CSS"
       />
+      <p>If you click on JS, it will redirect you to MDN Javascript docs.</p>
       <area
         shape="poly"
         coords="130,147,200,107,130,4,59,107"

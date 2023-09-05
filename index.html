@@ -16,13 +16,27 @@
     <p>You can reach Michael at:</p>
 
     <ul>
-      <li><a href="https://google.com" target="_blank">Website with Target _blank</a></li>
+      <li>
+        <a href="https://google.com" target="_blank"
+          >Website with Target _blank</a
+        >
+      </li>
       <!--usually a new tab, but users can configure browsers to open a new window instead-->
-      <li><a href="https://google.com" target="_parent">Website with Target _parent</a></li>
+      <li>
+        <a href="https://google.com" target="_parent"
+          >Website with Target _parent</a
+        >
+      </li>
       <!--the parent browsing context of the current one. If no parent, behaves as _self-->
-      <li><a href="https://google.com" target="_self">Website with Target _self (default)</a></li>
+      <li>
+        <a href="https://google.com" target="_self"
+          >Website with Target _self (default)</a
+        >
+      </li>
       <!--the current browsing context. (Default)-->
-      <li><a href="https://google.com" target="_top">Website with Target _top</a></li>
+      <li>
+        <a href="https://google.com" target="_top">Website with Target _top</a>
+      </li>
       <!-- the topmost browsing context (the "highest" context that's an ancestor of the current one). If no ancestors, behaves as _self-->
       <li><a href="mailto:m.bluth@example.com">Email</a></li>
       <li><a href="tel:+123456789">Phone</a></li>
@@ -92,5 +106,15 @@
       />
     </map>
     <img usemap="#infographic" src="mdn-info.png" alt="MDN infographic" />
+
+    <!--Below <aside> tag is used-->
+    <h2>Aside Tag</h2>
+    <p>This is some content about me and my interests.</p>
+    <aside>
+      <h4>My favorite code snippet</h4>
+      <p>This is a code snippet that prints "Hello, world!" in Python.</p>
+      <pre><code>print("Hello, world!")</code></pre>
+    </aside>
+    <p>More content about me and my interests.</p>
   </body>
 </html>

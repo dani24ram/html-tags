@@ -1,11 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Form</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <!-- Start of the form -->
+    <!--action- URL processes to provided link (goes to dummy link(#))-->
+    <!--method specifies HTTP method(default-GET)-->
+    <!--enctype specify how the form data should be encoded when submitting it to the server-->
+    <!--method="POST", so enctype is the MIME type of form submission-->
+    <form action="#" method="post" enctype="multipart/form-data">
+      <!-- Fieldset groups related form elements and includes a legend for grouping -->
+      <fieldset>
+        <!-- Legend provides a caption for the fieldset -->
+        <legend>Personal Information</legend>
+        <!-- Ordered list for organizing form fields -->
+        <ol>
+          <!-- Text input for collecting the user's name -->
+          <li>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              autocomplete="name"
+              required
+            />
+          </li>
+          <!-- Email input for collecting the user's email address -->
+          <li>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              autocomplete="email"
+              required
+            />
+          </li>
+          <!-- Textarea for collecting the user's address -->
+          <li>
+            <label for="address">Address:</label>
+            <textarea
+              id="address"
+              name="address"
+              rows="4"
+              placeholder="Enter your address"
+              autocomplete="street-address"
+              required
+            ></textarea>
+          </li>
+          <!-- Password input for collecting a secure password -->
+          <li>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              autocomplete="off"
+              required
+            />
+          </li>
+          <!-- Radio buttons for selecting gender -->
+          <li>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </li>
+          <!-- File input for uploading a file, accepts specific file formats -->
+          <li>
+            <label for="file">Upload a File:</label>
+            <input
+              type="file"
+              id="file"
+              name="file"
+              accept=".jpg, .jpeg, .png, .webp, .pdf, .doc, .docx"
+            />
+          </li>
+        </ol>
+      </fieldset>
+      <!-- Fieldset for additional information -->
+      <fieldset>
+        <!-- Legend for the additional information fieldset -->
+        <legend>Additional Information</legend>
+        <!-- Unordered list for organizing form elements -->
+        <ul>
+          <!-- Checkboxes for selecting interests -->
+          <li>
+            <label>Interests:</label>
+            <input
+              type="checkbox"
+              id="interest1"
+              name="interests[]"
+              value="Reading"
+            />
+            <label for="interest1">Reading</label>
+            <input
+              type="checkbox"
+              id="interest2"
+              name="interests[]"
+              value="Traveling"
+            />
+            <label for="interest2">Traveling</label>
+            <input
+              type="checkbox"
+              id="interest3"
+              name="interests[]"
+              value="Cooking"
+            />
+            <label for="interest3">Cooking</label>
+          </li>
+          <!-- Dropdown select for choosing a country -->
+          <li>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+              <!-- Options for different countries -->
+              <option value="in">India</option>
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- Submit button for form submission -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>

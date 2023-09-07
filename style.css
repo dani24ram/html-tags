@@ -1,0 +1,160 @@
+/* Universal selector , it has [0,0,0]  specificity*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Appling styles to the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+div .heading {
+  text-align: center;
+  padding: 20px;
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Styling the form container */
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the fieldset and legend */
+fieldset {
+  border: 2px solid #4b8ed6;
+  border-radius: 5px;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #4b8ed6;
+  margin-bottom: 10px; /* Add margin to push it down */
+  padding: 5px; /* Add padding for spacing */
+}
+
+/* Styling the labels and inputs */
+label {
+  display: block;
+  margin: 5px 5px;
+  font-weight: bold;
+}
+
+/* input[type="text"],
+input[type="email"],
+textarea,
+input[type="password"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Styling the gender labels and radio buttons */
+input[type="radio"] {
+  display: inline-block; /*Display radio buttons inline */
+  margin-right: 5px; /* Add some spacing between them */
+}
+
+label[for="male"],
+label[for="female"] {
+  display: inline-block; /* Display labels inline */
+  margin-right: 15px; /* Add some spacing between the labels */
+  padding-top: 5px;
+}
+
+/* Styling the profile picture */
+
+#preview {
+  /* display: block; */
+  margin-top: 10px;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border: 2px solid #607c9a; /* Add a border */
+  border-radius: 50%; /* Create a circular shape */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the submit and reset buttons */
+/* button[type="submit"],
+input[type="reset"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+button[type="submit"],
+input[type="reset"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+button[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+.btnWrapper {
+  text-align: center; /* Center-align the content */
+  margin-top: 20px; /* Add top margin for spacing */
+}
+
+/* Styling the checkbox labels and checkboxes */
+label[for="interest1"],
+label[for="interest2"],
+label[for="interest3"] {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+/* Styling the select dropdowns */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
